@@ -2,7 +2,10 @@
     "name": "hiaas-web-app",
     "version": "1.0.0",
     "main": "index.js",
+    "homepage": "https://codecakes.github.io/sample-dashboard",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build -b main",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -13,6 +16,7 @@
         "@emotion/styled": "^11.13.0",
         "@mui/material": "^6.0.2",
         "@radix-ui/react-tabs": "^1.0.0",
+        "gh-pages": "^6.1.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-scripts": "^4.0.3",
